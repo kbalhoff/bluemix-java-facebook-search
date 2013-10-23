@@ -7,6 +7,6 @@ How to register your app with Facebook:
 
 - In order to access the Facebook API, you need to register your application. You can follow Facebook's [Register and Configure a Facebook Application](https://developers.facebook.com/docs/web/tutorials/scrumptious/register-facebook-application/) tutorial.
 
-- Grab your App ID and App Secret. Now you should be able to start using [Facebook's various APIs](https://developers.facebook.com/docs/reference/apis/) .
+- Grab your App ID and App Secret. Now you should be able to start using [Facebook's various APIs](https://developers.facebook.com/docs/reference/apis/).
 
 	![image](/images/keys.png)
