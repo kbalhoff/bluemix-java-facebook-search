@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Facebook Search Analyzer</title>
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <style>
+	  .hero-unit{
+	    margin-top: 60px;
+	  }
+  </style>
+</head>
+<meta charset="utf-8">
+<body>
+  <div id="frontPage">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <a class="navbar-brand" href="/">
+        	<img src="/img/facebook_logo.png" class="img-rounded" height="30px" width="30px"> Facebook Search Analyzer
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="hero-unit">
+        <div>
+          <h2 class="text-center">
+            <img src="/img/facebook_logo.png" class="img-rounded" height="60px" width="60px"><em> Facebook Search Analyzer</em>
+          </h2>
+        </div>
+        <form style="text-align: center" id="search" method="GET" action="/graph">
+          <div id="error"></div>
+          <div class="form-group">
+            <input id="keyword" name="keyword" type="text" class="form-control" placeholder="Keyword">
+          </div>
+          <div class="btn-group" data-toggle="radio">
+            <label class="btn btn-default btn-large">
+              <input type="radio" name="option" id="people" value="people"> People
+            </label>
+            <label class="btn btn-default btn-large">
+              <input type="radio" name="option" id="companies" value="companies"> Companies
+            </label>
+          </div>
+          <button id="update" class="btn btn-primary btn-large" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/js/jquery-2.0.3.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script>
+    // validate form... make sure proper fields are filled in before submitting
+    $(document).ready(function () {
+      $('#search').submit(function (event) {
+        if ($('input[type=radio]:checked').size() == 0 || $('#keyword').val() == '') {
+         $('#error').html('<div class="alert alert-danger">Oops, you forgot to fill in a required field.</div>');
+         event.preventDefault();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
