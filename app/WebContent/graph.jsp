@@ -92,7 +92,7 @@
       $('#loading').html('');
       
       if (data.error != null) {
-        return $('#error').html('<div class="alert alert-danger"> Analytics service error: ' + data.error + '</div>');
+        return $('#error').html('<div class="alert alert-danger">' + data.error + '</div>');
       }
       
       if (data.labels.length == 0 && data.response.length == 0) {
