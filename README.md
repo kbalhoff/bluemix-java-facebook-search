@@ -93,4 +93,6 @@ Screenshots
 ------------------------------------
 -   Here are some screenshots of what the app will look like when it is running and functioning correctly. 
 
-    (These are to be added)
+    ![image](/images/workingApp1.png)
+    
+    ![image](/images/workingApp2.png)
