@@ -147,8 +147,8 @@
       };
       
       // draw graph
-      var chart = new Chart(canvas.getContext("2d")).Bar(chartData, options);
       var canvas = $('#chart')[0];
+      var chart = new Chart(canvas.getContext("2d")).Bar(chartData, options);
       
       // scale graph and other text areas with window size
       var resize = function () { 
