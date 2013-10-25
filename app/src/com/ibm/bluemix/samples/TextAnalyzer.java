@@ -126,7 +126,7 @@ public class TextAnalyzer {
 			}
 		}
 		
-		throw new Exception("No service URL found.");
+		throw new Exception("No service URL found. Make sure you have bound the correct services to your app.");
 	}
 	
 	/**
