@@ -28,7 +28,7 @@ If you want to use Eclipse to work on it, there are two ways you can get the sou
 	3. Select File->Import
 	4. Under the header labeled "General", click "Existing Projects Into Workspace" and click Next
 	5. Click "Browse" next to the first text field, and navigate to the cloned repository and find the folder labeled "app" and click ok.
-	6. Under Projects you should now see a project called "FacebookSearch", make sure the checkbox next to the "FacebookSearch" project is checked and then click "Finish
+	6. Under Projects you should now see a project called "FacebookSearch", make sure the checkbox next to the "FacebookSearch" project is checked and then click Finish
 	7. You should now see the "FacebookSearch" project in your list of projects in Eclipse.
 
 2. Import the WAR File
