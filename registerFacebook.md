@@ -9,6 +9,6 @@ How to register your app with Facebook:
 
 - Grab your App ID and App Secret. Now you should be able to start using [Facebook's various APIs](https://developers.facebook.com/docs/reference/apis/).
 
-	![image](/images/keys.png)
+	![image](images/keys.png)
 
 -   All you need to do now is copy the App ID and App Secret into the facebook4j.properties file in the **src** directory. You can edit the WAR file by importing it into Eclipse (File > Import > Web > WAR file).
