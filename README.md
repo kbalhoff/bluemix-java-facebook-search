@@ -13,19 +13,19 @@ Before we begin, we first need to install the command line tool that will be use
 
 For Linux systems, consult your documentation for how to install the **ruby** package - for Ubuntu the command:
 
-		apt-get install ruby
+	apt-get install ruby
 
 should work for you.
 
 Once Ruby is installed, cf can be installed by using the **gem install** command:
         
-		gem install cf
+	gem install cf
         
 ## Download the App ##
 
 The source for this app is at GitHub so, for example, if you are using the command line you can clone the repository like this:
 
-		git clone https://github.com/ibmjstart/bluemix-java-facebook-search.git
+	git clone https://github.com/ibmjstart/bluemix-java-facebook-search.git
 		
 If you want to use Eclipse to work on it, there are two ways you can get the source into Eclipse:
 
@@ -64,7 +64,7 @@ The graph is generated using the Chart.js library, which is under MIT license. T
 
 Once you have included the Facebook App ID and App Secret as shown above, you are all set to deploy the app. In the terminal, go in the directory of the app. The application is wrapped in a WAR file. You can directly deploy/push the WAR file using push command:
 
-		cf push
+	cf push
 
 Just follow the instructions on the screen. You can select the default settings for deploying the app, i.e. for URL, memory reservations (512 Recommended), number of instances. You need to bind the Company Text Analytics Service and Name Text Analytics Service to your application. 
 
